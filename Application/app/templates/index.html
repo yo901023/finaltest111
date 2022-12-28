@@ -1,43 +1,42 @@
-{% extends "layout.html" %}
 
-{% block content %}
-{% load staticfiles %}
-<div class="main-container">
-    <div class="cloud-image">
-        <img src="{% static "app/img/successCloudNew.svg" %}" />
-    </div>
-    <div class="content">
-        <div class="tweet-container">
-            <a href="http://twitter.com/intent/tweet/?text=I%20just%20created%20a%20new%20Python%20Django%20website%20on%20Azure%20using%20Github%20Actions&hashtags=GithubActions%20%40Azure">
-                <img src="{% static "app/img/tweetThis.svg" %}" />
-            </a>            
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+  <title>圖書介購系統</title>
+</head>
+<body>
+ <nav class="navbar navbar-light bg-light">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="http://cloudacademy.fcu.edu.tw/wp-content/uploads/2019/07/fcul_red_web_20190711-1.png">
+          </a>
         </div>
-        <div class="content-body">
-            <div class="success-text">Success!</div>
-            <div class="description line-1"> GitHub workflow has been successfully setup</div>
-            <div class="description line-2"> Your Python Django app is up and running on Azure</div>
-        </div>
-    </div>
-</div>
+      </nav>
+<div id="wrapper">
+  <h1>逢甲大學圖書館線上薦購系統</h1>
+  <h3>公布欄</h3>
+    <th><table id="Table1" class="table table-list" border="0"></th><!-- Noncompliant -->
+      <tr>
+        <td>．2022/12/27 19:19:19</font></td>
+      </tr>
+      <tr>
+        <td><a onClick="window.open('http://recommend.lib.fcu.edu.tw/weblink/scripts/weblink/news.aspx?num=47&displaylang=','',copyhistory=0,top=50,left=50,width=40,height=40,scrollbars=1);" href="javascript:void(0);">薦購系統E-mail自動通知功能暫停公告</a></font></td>
+      </tr>
+      <tr>
+        <td>．2022/12/27 05:05:05</font></td>
+      </tr>
+      <tr>
+         <td><a onClick="window.open('http://recommend.lib.fcu.edu.tw/weblink/scripts/weblink/news.aspx?num=45&displaylang=','',copyhistory=0,top=50,left=50,width=400,height=400,scrollbars=1);" href="javascript:void(0);">簡體書延遲到貨公告</a></font></td>
+       </tr>
+      <tr>
+        <td>．2022/12/27 23:59:59</font></td>
+      </tr>
+      <tr>
+        <td><a onClick="window.open('http://recommend.lib.fcu.edu.tw/weblink/scripts/weblink/news.aspx?num=10&displaylang=','',copyhistory=0,top=50,left=50,width=400,height=400,scrollbars=1);" href="javascript:void(0);">各類資源薦購額度與作業方式一覽表</a></font></td>
+      </tr>
+    </table>
+</div><!-- #blk-board -->
 
-<div class="row">
-    <div class="col-md-4">
-        <h2>Get started right away </h2>
-        <p>
-            Clone your code repository and start developing your application on IDE of your choice
-        </p>
-        <p><a class="btn btn-default" href="https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Continuous Delivery</h2>
-        <p>Learn more about all you can do with Github Actions by visiting the documentation</p>
-        <p><a class="btn btn-default" href="https://docs.github.com/en/actions">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Github Repository</h2>
-        <p>Learn more about all you can do with Github by visiting the documentation</p>
-        <p><a class="btn btn-default" href="https://docs.github.com">Learn more &raquo;</a></p>
-    </div>
-</div>
-
-{% endblock %}
+</body>
+</html>
